@@ -1,0 +1,13 @@
+{
+  "name": "cognito-local-docker",
+  "version": "1.0.0",
+  "description": "Dockerize Cognito-Local",
+  "dependencies": {
+    "cognito-local": "^2.1.0"
+  },
+  "scripts": {
+    "start": "HOST=0.0.0.0 cognito-local"
+  },
+  "author": "Jepoy Go <j3p0ygo@gmail.com>",
+  "license": "ISC"
+}
