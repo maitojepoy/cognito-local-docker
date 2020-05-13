@@ -20,7 +20,7 @@ You can include the built image in your docker-compose file. Declare the ff in y
         volumes:
           - ./cognito:/usr/src/app/.cognito
 
-The image exposes a volume folder where it stores all the data json files (clients and user pool list), so make sure you have to create the volume folder before running the compose file. In the example above, create a `cognito` folder next to `docker-compose.yml`.
+The image exposes a volume folder where it stores all the data json files (clients and user pool list), also it will expose port 9229. In the example above, a `cognito` folder will be created next to `docker-compose.yml` (see example `docker-compose.yml` file in this repo).
 
 Once your compose file is ready, just run:
 

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  cognitolocal:
+    image: maitojepoy/cognito-local-docker:latest
+    ports: 
+      - "9229:9229"
+    volumes:
+      - ./cognito:/usr/src/app/.cognito
+    networks:
+      - local
+
+networks:
+  local:
